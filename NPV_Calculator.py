@@ -2,12 +2,12 @@ def val():
     s = float(input("Shares in Millions: "))
     e = float(input("Net Income: "))
     c = float(input("Cash: "))
-    d = float(input("Debt: "))
+    db = float(input("Debt: "))
     g = float(input("10 Year Expected Growth Rate: "))
     p = float(input("Perpetual Growth Rate: "))
     d = float(input("Discount Rate: "))
     e = e/s
-    cd = (c - d) / s
+    cd = (c - db) / s
     counter = 0
     npv = 0
     while counter < 100:
